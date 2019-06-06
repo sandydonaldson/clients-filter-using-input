@@ -1,3 +1,12 @@
+<h1>Clients</h1>
+
 <p>
-  Angular Blank Project
-</p>
+  Search: <input [(ngModel)]="searchText" placeholder="search text goes here">
+</p>  
+
+
+<table id="myTable">
+  <tr *ngFor="let client of clients | filter : searchText">
+    <td>{{ client.Name }}</td>
+  </tr>
+</table>

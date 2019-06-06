@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Injectable } from '@angular/core';
+import client_data from './clients.json';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+
+  clients = client_data;
   
+  constructor() {
+  }
+
 }
